@@ -9,6 +9,7 @@ nav {
     justify-content: space-between;
     padding: 1rem 5rem;
     font-size: 1.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 nav ul{
@@ -17,6 +18,10 @@ nav ul{
     flex-direction: row;
     column-gap: 2rem;
     text-transform: uppercase;
+}
+
+nav ul :hover{
+color: coral;
 }
 
 nav button{
@@ -180,7 +185,7 @@ nav button{
 .categoriess button {
     display: flex;
     flex-direction: column;
-    background-color: darkgrey;
+    background-color:antiquewhite;
     text-align: center;
     padding: 3rem;
     border: none;
@@ -200,9 +205,32 @@ nav button{
     font-size: 50px;
 }
 
-#categories span {
+.properties {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-evenly;
+    text-align: center;
+    row-gap: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.location {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    column-gap: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    justify-content: center;
+}
+
+.buttons {
+    color:coral;
+    border: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: coral;
+    color: white;
 }
